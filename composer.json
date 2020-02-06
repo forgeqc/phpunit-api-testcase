@@ -1,0 +1,25 @@
+{
+    "name": "forgeqc/phpunit-api-testcase",
+    "version": "0.1.0",
+    "type": "library",
+    "description": "PHPUNIT TestCase for JSON and XML API integration testing",
+    "keywords": ["phpunit", "api", "json", "xml"],
+    "license": "MIT",
+    "require": {
+        "phpunit/phpunit": "^8.1",
+        "guzzlehttp/guzzle": "^6.5"
+    },
+    "autoload": {
+      "psr-4": {
+        "ForgeQC\\ApiIntegrationTesting\\": "src/"
+      }
+    },
+    "autoload-dev": {
+      "psr-4": {
+        "Tests\\ForgeQC\\ApiIntegrationTesting\\": "tests/"
+      }
+    },
+    "scripts": {
+        "test": "./vendor/bin/phpunit"
+    }
+}
